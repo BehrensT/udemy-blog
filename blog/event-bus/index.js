@@ -10,6 +10,7 @@ app.post('/events', (req, res) => {
 
     const event = req.body;
 
+
     console.log(`Received Event: ${JSON.stringify(event)}`)
 
     axios.post('http://localhost:4000/events', event).catch((err) => {
